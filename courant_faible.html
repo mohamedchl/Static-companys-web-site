@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>IRITEL</title>
+  <link rel="shortcut icon" type="x-icon" href="pictures/icon.png" >
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+	<link rel="stylesheet" href="style_courant.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+	<nav class="nav_bar"> 
+		<img src="pictures/IRITEL logo.png" alt="iritel" class="logo" onclick="window.location.href='index.html';" style="cursor: pointer;" >
+		
+		<ul class="pc_nav">
+			<li><a href="#"onclick="event.preventDefault(); window.location.href='index.html';">Accueil</a></li>
+			<li class="toggle" id="toggle"  ><a href="#"  onclick="event.preventDefault();">Services <i id="toggle1" class="fa-solid fa-chevron-right" style=" transform: rotate(0deg);font-size: 0.9em; margin-left: 5px;"></i></a></li>
+			<div class="items" id="items">
+				<li id="afterr"><a href="#" style="white-space: nowrap;" onclick="event.preventDefault();window.location.href='courant_faible.html'; "id="item1"> 
+					courant-faible
+				  </a></li>
+				 <li > <a href="#" style="white-space: nowrap;" onclick="event.preventDefault(); window.location.href='courant_fort.html';" id="item2"> courant-fort </a></li> 
+			</div>
+			<li><a href="#"onclick="event.preventDefault(); window.location.href='index.html#section4';">Contact</a></li>
+      <li class="tiggle" id="tiggle" onclick="expand1()" ><a href="#"  onclick="event.preventDefault();">Plus <i id="tiggle1" class="fa-solid fa-chevron-right" style=" transform: rotate(90deg);font-size: 0.9em; margin-left: 5px;"></i></a></li>
+      <div class="itims" id="itims">
+        <li><a href="#" onclick="toggle1();event.preventDefault();" id="itim1">
+          References
+        </a></li>
+       <li> <a href="#" style="white-space: nowrap;" onclick="toggle();event.preventDefault();" id="itim2"> A-propos</a></li> 
+      </div>
+			
+		</ul>
+
+		<label class="label">
+		  <input type="checkbox" onclick="checkCheckbox();" id="mycheckbox">
+		 
+		  <span class="menu">
+			<span class="hamburger"></span>
+		  </span>
+	   
+		  <ul id="myElement">
+			<li><a href="#"onclick="checkboxfalse();event.preventDefault();window.location.href='index.html';">Accueil</a></li>
+			<li><a href="#"onclick="checkboxfalse();event.preventDefault();window.location.href='courant_faible.html';" style="white-space: nowrap;color: rgb(54,98,142);">courant-faible</a></li>
+			<li><a href="#"onclick="checkboxfalse();event.preventDefault();window.location.href='courant_fort.html';"style="white-space: nowrap;">courant-fort</a></li>
+			<li><a href="#"onclick="checkboxfalse();event.preventDefault();window.location.href='index.html#section4';">Contact</a></li>
+		  
+			  <li><a href="#" onclick="toggle1();checkboxfalse();event.preventDefault();" id="itim1">
+				References 
+			  </a></li>
+			 <li> <a href="#"  onclick="toggle();checkboxfalse();event.preventDefault();" id="itim2"> A_propos</a></li> 
+			
+		  </ul>
+		</label>
+	</nav>
+	
+	
+      <div id="popup"><p>Créée en 2001, spécialisée dans les installations de réseaux Informatiques, téléphoniques, et électricité industrielle (courant fort et courant faible). <br>
+        La Sarl IRITEL Algérie met à la disposition de ses clients une équipe d’ingénieurs et de câbleurs qualifiés et expérimentés. Ayant à son actif, un capital réalisations et expériences assez considérables, des sociétés prestigieuses et valeureuses
+        nous ont confié la réalisation de leurs réseaux.</p>
+        <a href="#" onclick="toggle();event.preventDefault();">fermer</a>
+      </div>
+      <div id="refer">
+        <p style="font-size: 1.3rem;">Une liste non exhaustive de clients prestigieux nous fait confiance</p>
+        <div class="logo-slider">
+        <div class="logo-slide-track">
+          <div class="slide">
+            <img loading="lazy" src="references/hsbc.png" alt="" />
+          </div>
+
+          <div class="slide">
+            <img loading="lazy" src="references/sagem logo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img loading="lazy" src="references/baticim.png" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              loading="lazy"
+              src="references/logo-ooredoo-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              loading="lazy"
+              src="references/Logo-societe-generale.png"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img loading="lazy" src="references/cma_logo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img loading="lazy" src="references/Philips_logo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img loading="lazy" src="references/Hilti-Logo.png" alt="" />
+          </div>
+          <div class="slide">
+            <img loading="lazy" src="references/ciment.png" alt="" />
+          </div>
+          <div class="slide">
+            <img loading="lazy" src="references/cnan nord.png" />
+          </div>
+          <div class="slide">
+            <img
+              style="width: 250px; padding: 10px"
+              loading="lazy"
+              src="references/trust logo.png"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              style="width: 150px; padding: 10px"
+              loading="lazy"
+              src="references/sonalgaz.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+        <a href="#" onclick="toggle1();event.preventDefault();">fermer</a>
+      </div>
+	  <div class="body">
+	<div class="wrapper_abouve">
+	<div class="wrapper">
+			<header>
+				<h1>Iritel vous propose une gamme variée de services selon votre préférence.</h1>
+				<p>Veuillez sélectionner le service de votre choix.</p>
+			</header>
+      <div class="wrappper">
+        <div class="select-btn">
+          <span>Sélectionne un service</span>
+          <div class="search-icon">
+            <span class="search-line main-line"></span>
+            <span class="search-circle"></span>
+            <span class="search-line second-line"></span>
+          </div>
+        </div>
+        <div class="content">
+          <ul class="options">
+            <li onclick="showw(document.getElementById('card1')) ; scrollToElement('card1') ;">centre dappel</li>
+            <li onclick="showw(document.getElementById('card2')) ; scrollToElement('card2') ;">les controle d'acces</li>
+            <li onclick="showw(document.getElementById('card3')) ; scrollToElement('card3') ;">centre des données</li>
+            <li onclick="showw(document.getElementById('card4')) ; scrollToElement('card4') ;">système de détection incendie</li>
+            <li onclick="showw(document.getElementById('card5')) ; scrollToElement('card5') ;">réseux informatique</li>
+            <li onclick="showw(document.getElementById('card6')) ; scrollToElement('card6') ;">télésurveillance</li>
+            <li onclick="showw(document.getElementById('card7')) ; scrollToElement('card7') ;">téléphonie</li>
+            <li onclick="showw(document.getElementById('card8')) ; scrollToElement('card8') ;" style="white-space: nowrap;">télé-affichage</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cards" >
+
+        <div class="card" id="card1">
+          <div class="card__image-holder">
+            <img class="card__image" src="courantfpic/Centre_d_appels/images22.png" alt="Centre_d_appels" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              centre d'appeles
+              
+          </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              Nous réalisons les réseaux des centres d’appel en
+              nombre et en disposition voulu.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" onclick="event.preventDefault(); window.location.href='index.html#section4';"class="btn">Contact nous pour plus d'informations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card" id="card2">
+        
+          <div class="card__image-holder">
+            <img class="card__image" src="courantfpic/Controle_d_acces/images01.png" alt="controle d'acces" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              Les controles d'acces                
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              Notre société est spécialisée 
+
+              dans les systèmes de contrôle d’accès
+              
+              et anti-intrusion.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" onclick="event.preventDefault(); window.location.href='index.html#section4';"class="btn">Contact nous pour plus d'informations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card" id="card3">
+          <div class="card__image-holder">
+            <img class="card__image" src="courantfpic/Centre_de_données/images04.png" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              Centre des données
+                
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              Notre société est en mesure de réaliser des salles informatiques (IT rooms) ou des centres de données (DATA CENTER) avec toutes les spécificités techniques que cela comporte.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" onclick="event.preventDefault(); window.location.href='index.html#section4';"class="btn">Contact nous pour plus d'informations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card" id="card4">
+          <div class="card__image-holder">
+            <img class="card__image" src="courantfpic/Détection_Incendie/images01.png" alt="système incendie" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn" id="incendie">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              système de détection incendie                
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              Nous offrons à nos clients l’installation de
+              système de détection de fumé et d’incendie, avec les
+              systèmes de prévention et d’alarme adéquat.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" onclick="event.preventDefault(); window.location.href='index.html#section4';"class="btn">Contact nous pour plus d'informations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card" id="card5">
+          <div class="card__image-holder">
+            <img class="card__image" src="courantfpic/reseau_Informatique/images01.png" alt="réseaux informatique" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              Réseau informatique                
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description"> Nous mettons à votre disposition <br>
+              Installation de réseaux informatiques câblés et sans
+fils.
+<br>
+Inter connexion entre réseaux distants par fibre
+optique <br>
+Partage d’internet et de ressource matériel sous
+réseau.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" onclick="event.preventDefault(); window.location.href='index.html#section4';"class="btn">Contact nous pour plus d'informations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card" id="card6">
+          <div class="card__image-holder">
+            <img class="card__image" src="courantfpic/Tele-surveillance/images03.png" alt="télésurveillance" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              Télésurveillance
+                
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              Etant une entreprise agréée nous réalisons des
+              installations de télésurveillance, intérieur extérieur ,
+              de jour comme de nuit , avec des enregistrements de
+              grandes capacité, et avec possibilité de consultation
+              des sites sous surveillance à distance via internet.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" onclick="event.preventDefault(); window.location.href='index.html#section4';"class="btn">Contact nous pour plus d'informations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card" id="card7">
+          <div class="card__image-holder">
+            <img class="card__image" src="courantfpic/telephonie/images01.png" alt="telephonie" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2>
+              Réseau téléphonique                
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              notre société vous propose une installation de réseaux téléphoniques avec standard de petite et grande capacité, incluant l'intégration de lignes GSM dans le réseau.
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" onclick="event.preventDefault(); window.location.href='index.html#section4';"class="btn">Contact nous pour plus d'informations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card" id="card8">
+          <div class="card__image-holder">
+            <img class="card__image" src="courantfpic/Teleaffichage/Photos1.JPG" alt="teleafichage" />
+          </div>
+          <div class="card-title">
+            <a href="#" class="toggle-info btn">
+              <span class="left"></span>
+              <span class="right"></span>
+            </a>
+            <h2 style="white-space: nowrap;">
+              télé-affichage
+                
+            </h2>
+          </div>
+          <div class="card-flap flap1">
+            <div class="card-description">
+              Télé affichage ou affichage dynamique
+              Utilise pour les informations a diffuser sur des écrans dans les aéroports les gares maritimes les gares ferroviaires et les gares routières <br>
+              Avec possibilité de diffusion de spots publicitaires ou n'importe quelle vidéo ou information
+            </div>
+            <div class="card-flap flap2">
+              <div class="card-actions">
+                <a href="#" onclick="event.preventDefault(); window.location.href='index.html#section4';"class="btn">Contact nous pour plus d'informations</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+       
+      
+      </div>      
+	</div>
+</div>
+</div>
+	<script>
+   
+
+  function scrollToElement(elementId) {
+  const targetElement = document.getElementById(elementId);
+  if (targetElement) {
+    const scrollOffset = targetElement.getBoundingClientRect().top + window.scrollY - window.innerHeight / 6;
+    window.scrollTo({
+      top: scrollOffset,
+      behavior: 'smooth'
+    });
+  }
+}
+const wrapper = document.querySelector(".wrappper");
+const searchIcon = document.querySelector('.search-icon');
+options = wrapper.querySelector(".options");
+selectBtn = wrapper.querySelector(".select-btn"),
+selectBtn.addEventListener("click", () => {wrapper.classList.toggle("active") ; searchIcon.classList.toggle('active-icon') ;});
+var zindex = 10;
+document.addEventListener("DOMContentLoaded", function() {
+  
+  
+  var cardDivs = document.querySelectorAll("div.card");
+  var cardsDiv = document.querySelector("div.cards");
+
+  cardDivs.forEach(function(card) {
+    card.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      var isShowing = false;
+
+      if (card.classList.contains("show")) {
+        isShowing = true;
+      }
+
+      if (cardsDiv.classList.contains("showing")) {
+        // a card is already in view
+        var showingCard = document.querySelector("div.card.show");
+        showingCard.classList.remove("show");
+
+        if (isShowing) {
+          // this card was showing - reset the grid
+          cardsDiv.classList.remove("showing");
+        } else {
+          // this card isn't showing - get in with it
+          card.style.zIndex = zindex;
+          card.classList.add("show");
+        }
+
+        zindex++;
+
+      } else {
+        // no cards in view
+        cardsDiv.classList.add("showing");
+        card.style.zIndex = zindex;
+        card.classList.add("show");
+
+        zindex++;
+      }
+    });
+  });
+});
+function showw(element){
+  
+  var isShowing = false;
+  
+  var cardDivs = document.querySelectorAll("div.card");
+  var cardsDiv = document.querySelector("div.cards");
+
+if (element.classList.contains("show")) {
+  isShowing = true;
+}
+
+if (cardsDiv.classList.contains("showing")) {
+  // a card is already in view
+  var showingCard = document.querySelector("div.card.show");
+  showingCard.classList.remove("show");
+
+  if (isShowing) {
+    // this card was showing - reset the grid
+    cardsDiv.classList.remove("showing");
+  } else {
+    // this card isn't showing - get in with it
+    element.style.zIndex = zindex;
+    element.classList.add("show");
+  }
+
+  zindex++;
+
+} else {
+  // no cards in view
+  cardsDiv.classList.add("showing");
+  element.style.zIndex = zindex;
+  element.classList.add("show");
+
+  zindex++;
+}
+}
+
+		/*checkbox*/ 
+function checkCheckbox() {
+  var element = document.getElementById("myElement");
+  var checkbox = document.getElementById("mycheckbox");
+  if (checkbox.checked) {
+
+  element.style.display = "flex";
+  setTimeout(function() {
+    element.classList.toggle("visible");
+  }, 10);
+  } else {
+    element.classList.toggle("visible");
+    
+    setTimeout(function() {
+      element.style.display = "none";
+    }, 100);
+  }
+}
+
+
+var state=false;
+  function expand(){
+    if(state==false){
+		document.getElementById('items').style.width = '0';
+    
+	document.getElementById('items').style.transform='scaleX(0)';
+	document.getElementById('toggle1').style.transform='rotate(90deg)';
+   
+        state=true;
+  }
+    else{
+        document.getElementById('items').style.transform='scaleX(1)';
+      document.getElementById('items').style.width = '350px';
+     
+      document.getElementById('toggle1').style.transform='rotate(0deg)';
+      document.getElementById('toggle1').style.marginTop='0.2rem';
+     
+	state=false;
+  }
+}
+/*nav phone*/
+function checkboxfalse() {
+  var element = document.getElementById("myElement");
+const checkbox = document.querySelector('.label input[type="checkbox"]');
+  checkbox.checked = false;
+  element.classList.toggle("visible");
+  setTimeout(function() {
+    element.style.display = "none";
+  }, 100);
+}
+document.addEventListener('DOMContentLoaded', function() {
+
+var popup = document.getElementById('popup');
+
+var popup1 = document.getElementById('refer');
+
+setTimeout(function() {
+  popup.classList.add('loaded');
+  popup1.classList.add('loaded');
+}, 2000);
+});
+function toggle() {
+  let blurr = document.querySelectorAll(".body");
+  blurr.forEach(element => {
+    element.classList.toggle('active');
+  });
+
+  let pop = document.getElementById('popup');
+  pop.classList.toggle('active');
+
+  let popupClicked = false;
+
+  setTimeout(function() {
+    document.addEventListener('click', clickOutsideHandler);
+  }, 10);
+
+  function clickOutsideHandler(event) {
+    const outsideClick = !pop.contains(event.target);
+ 
+    if (outsideClick && !popupClicked) {
+      pop.classList.toggle('active');
+      blurr.forEach(element => {
+        element.classList.toggle('active');
+      });
+    }
+
+    document.removeEventListener('click', clickOutsideHandler);
+  }
+
+  pop.addEventListener('click', function(event) {
+    popupClicked = true;
+    event.stopPropagation(); 
+  });
+
+  document.addEventListener('click', function() {
+    popupClicked = false; 
+  });
+}
+
+
+function toggle1() {
+  let blurr = document.querySelectorAll(".body");
+  blurr.forEach(element => {
+    element.classList.toggle('active');
+  });
+let ref = document.getElementById('refer');
+ref.classList.toggle('active') ;
+let popupClicked2 = false;
+
+  setTimeout(function() {
+    document.addEventListener('click', clickOutsideHandler2);
+  }, 10);
+
+  function clickOutsideHandler2(event) {
+    const outsideClick = !ref.contains(event.target);
+ 
+    if (outsideClick && !popupClicked2) {
+      ref.classList.toggle('active');
+      blurr.forEach(element => {
+        element.classList.toggle('active');
+      });
+    }
+
+    document.removeEventListener('click', clickOutsideHandler2);
+  }
+
+  ref.addEventListener('click', function(event) {
+    popupClicked2 = true;
+    event.stopPropagation(); // stop event propagation to prevent it from triggering the clickOutsideHandler
+  });
+
+  document.addEventListener('click', function() {
+    popupClicked2 = false; // set flag variable back to false when user clicks outside popup
+  });}
+
+  var state=false;
+  function expand1(){
+    if(state==false){
+      document.getElementById('itims').style.transform='scaleX(1)';
+      document.getElementById('itims').style.width = '200px';
+      document.querySelector(".pc_nav").style.marginRight = "16%" ;
+      document.getElementById('tiggle1').style.transform='rotate(0deg)';
+      document.getElementById('tiggle1').style.marginTop='0.2rem';
+        state=true;
+  }
+    else{
+      document.getElementById('itims').style.width = '0';
+      document.querySelector(".pc_nav").style.marginRight = "10%" ;
+      document.getElementById('itims').style.transform='scaleX(0)';
+      document.getElementById('tiggle1').style.transform='rotate(90deg)';
+	state=false;
+  }
+}
+
+	</script>
+</body>
+</html>
